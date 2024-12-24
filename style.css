@@ -64,6 +64,36 @@ h1 {
   margin-top: 20px;
 }
 
+#voice-container {
+  width: 300px;
+  margin-bottom: 20px;
+}
+#voice-container select {
+  width: 240px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  background: #1a1a1a;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  color: #eeeeee;
+}
+
+#voice-container select:hover {
+  border-color: #777;
+}
+#voice-container select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+#voice-container label {
+  font-size: 18px;
+}
+
 .styled-button {
   position: relative;
   padding: 1rem 2rem;

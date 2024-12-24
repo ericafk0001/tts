@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function speak() {
     const textToSpeak = inputText.value;
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
+    const voiceType = document.getElementById("voice");
+    const voiceTypeValue = voiceType.value;
 
     const voices = speechSynthesis.getVoices();
-    utterance.voice = voices[0]; // select voice
+    utterance.voice = voices[voiceTypeValue]; // select voice
     speechSynthesis.speak(utterance);
   }
 
@@ -22,7 +24,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const destination = audioContext.createMediaStreamDestination();
     const mediaRecorder = new MediaRecorder(destination.stream);
 
-    utterance.voice = speechSynthesis.getVoices()[0];
+    const voiceType = document.getElementById("voice");
+    const voiceTypeValue = voiceType.value;
+
+    utterance.voice = speechSynthesis.getVoices()[voiceTypeValue];
     const source = audioContext.createMediaStreamSource(destination.stream);
 
     // Capture audio data
