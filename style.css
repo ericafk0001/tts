@@ -60,7 +60,7 @@ h1 {
 #actions {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
   margin-top: 20px;
 }
 
@@ -140,10 +140,10 @@ h1 {
 }
 
 .button {
-  padding: 0.9rem 4.2rem;
+  padding: 0.9rem 5.2rem;
   border: none;
   outline: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   border-radius: 0.3rem;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.953);

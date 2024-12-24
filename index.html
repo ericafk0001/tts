@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Text to Speech</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="card">
       <h1>Text to Speech</h1>
 
-      <textarea placeholder="Write Something..."></textarea>
+      <textarea placeholder="Write Something..." id="input-text"></textarea>
+
       <div id="actions">
         <button class="styled-button" id="submit-btn">
-          Submit
+          Play Audio
           <div class="inner-button">
             <svg
               id="Arrow"
@@ -48,8 +49,8 @@
             </svg>
           </div>
         </button>
-        <button class="button">
-          <p class="text">Download</p>
+        <button class="button" id="download-btn">
+          <p class="text">Download Audio</p>
           <div class="svg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
